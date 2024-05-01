@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Open+Sans:wght@600&display=swap');
+* {
+  margin:0px;
+  padding:0px;
+  box-sizing: border-box;
+  font-family: "Lora", serif;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  background: plum;
+}
+section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+}
+header {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  padding: 40px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo {
+  color: white;
+  font-size: 1.5em;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: hotpink;
+  border-radius: 5px;
+  padding: 0 10px;
+  font-family: "Lora", serif;
+  font-weight: 600;
+}
+header .logo:hover {
+  color: hotpink;
+  background: white;
+  transition: 1s;
+}
+header .navbar {
+  position: relative;
+  display: flex;
+  background-color: bisque;
+  border-radius: 5px;
+}
+header .navbar li {
+  list-style: none;
+  margin-left: 30px;
+}
+header .navbar li a {
+  text-decoration: none;
+  color: hotpink;
+  /* white */
+  font-weight: 600;
+  padding: 10px;
+  transition: 0.3s;
+  font-size: 0.9em;
+  text-transform: uppercase;
+}
+header .navbar li a:hover {
+  border-bottom: 5px solid rgb(137,66,188);
+  padding: 2px;
+}
+/* Contenido de la web */
+.contenido {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 30px;
+}
+
+.contenido .tituloBox {
+  position: relative;
+  max-width: 600px;
+  text-align: center;
+}
+.contenido .tituloBox h2 {
+  font-size: 2.5em;
+  text-transform: uppercase;
+  color: white;
+}
+.contenido .tituloBox h2 span {
+  background: rgb(137,66,188);
+  color: white;
+  padding: 0 10px;
+  font-family: "Lora", serif;
+  font-weight: 600;
+  border-radius: 20px;
+}
+.contenido .tituloBox p {
+  font-size: 1.8em;
+  line-height: 1.5;
+  color: white;
+  font-family: "Lora", serif;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+.contenido .tituloBox a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgb(137,66,188);
+  background-color: white;
+  padding: 10px 20px;
+  margin: left 30px;
+  border-radius: 20px;
+  letter-spacing: 2px;
+  transition: 0.5s;
+}
+.contenido .tituloBox a:hover {
+  color: white;
+  background: rgb(137,66,188);
+  transition: 0.5s;
+}
+.contenido .imgBox {
+  width: 600px;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 50px;
+  margin-top: -50px;
+  z-index: -5;
+}
+.contenido .imgBox img {
+  height: 70vh;
+}
+.contenido .imgBox img:hover {
+  height: 80vh;
+}
+/* Copyright */
+.copyright {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+.copyright p{
+  color: white;
+  text-align: center;
+  margin-left: 100px;
+}
+/* Redes Sociales */
+.redesSociales{
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 100px 30px;
+  list-style: none;
+}
+.redesSociales li {
+  padding: 10px;
+}
+.redesSociales li a{
+  color: white;
+  font-size: 2.5em;
+  transition: 0.3s;
+}
+.redesSociales li:hover a {
+  color: rgb(45,3,74);
+}
+/* Css de cv.html */
+.cv .contenido .info {
+  background: #f9f9f9;
+  padding: 20px;
+  margin: 20px 5px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.cv .contenido .info h3 {
+  color: rgb(137,66,188);
+}
+
+/* Css de proyectos.html */
+.proyectos .tituloBox {
+  text-align: center;
+}
+.proyectos .tituloBox h1 {
+  font-family: "Lora", serif;
+  color: rgb(137,66,188);
+  font-size: 2.5em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.quien h1, .cv h1, .proyectos h1, .formulario h1 {
+  font-family: "Lora", serif;
+  color: rgb(137,66,188);
+  font-size: 2.5em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.proyectos .tituloBox h2 {
+  color: rgb(137,66,188);
+  font-size: 1em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.carousel {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 100px;
+}
+.carousel-image {
+  border: 1px solid #ccc;
+  width: 250px;
+  overflow: hidden;
+  text-align: center;
+  background: white;
+  padding: 10px;
+}
+.carousel-image img {
+  width: 100%;
+  height: auto;
+}
+.carousel a {
+  text-decoration: none;
+  color: rgb(137,66,188);
+  background-color: plum;
+  padding: 10px 20px;
+  margin: left 30px;
+  border-radius: 20px;
+  letter-spacing: 2px;
+  transition: 0.5s;
+}
+.carousel a:hover {
+  color: white;
+  background: rgb(137,66,188);
+  transition: 0.5s;
+}
+/* Css de formulario.html */
+.contacto {
+  display: block;
+  margin-top: 80px;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.contacto h1 {
+  color: rgb(137,66,188);
+  font-size: 2.5em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.contacto p {
+  color: white;
+  text-align: center;
+  font-size: 0,8em;
+}
+form {
+  margin-top: -10px;
+  margin: 0 auto;
+  width: 70%;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px grey;
+}
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+/* css de los botones enviar y reset */
+button {
+  padding: 10px 20px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  background: rgb(137,66,188);
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+  transition: 0.5s;
+}
+button:hover {
+  background: white;
+  color: rgb(137,66,188);
+}
+/*Ajustes para hacer que la web sea Responsive*/
+@media (max-width: 992px) {
+  .contenido {
+    flex-direction: column;
+    padding: 10px;
+  }
+  .contenido .tituloBox {
+    max-width: 100%;
+  }
+  .contenido .tituloBox h2 {
+    font-size: 2em;
+  }
+  .contenido .tituloBox p {
+    font-size: 1.5em;
+  }
+  .contenido .tituloBox a {
+    font-size: 0.8em;
+  }
+  .copyright {
+    display: none;
+  }
+  /* Parte Responsive de Cv */
+  .cv .contenido .info {
+    margin-top: 50px;
+    padding: 10px;
+  }
+  .cv .contenido .info h3 {
+    font-size: 1.5em;
+  }
+  .cv .contenido .info p {
+    font-size: 1em;
+  }
+  /*  Parte Responsive de formulario.html */
+  .contacto {
+    margin-top: 120px;
+  }
+  form {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+@media (max-width: 576px) {
+  header {
+    padding: 20px;
+  }
+  header .navbar {
+    display: block;
+  }
+  header .navbar li{
+    margin: 0;;
+  }
+  .contenido {
+    padding: 10px;
+  }
+  .contenido h1 {
+    margin-top: 50px;
+    font-size: 2em;
+  }
+  .proyectos h1 {
+    margin-top: 50px;
+    font-size: 1.5em;
+  }
+  .contenido .tituloBox h2 {
+    font-size: 1.5em;
+  }
+  .contenido .tituloBox p {
+    font-size: 1em;
+  }
+  .contenido .tituloBox a {
+    font-size: 0.8em;
+  }
+  .contenido .imgBox {
+    display: none;
+  }
+  .redesSociales {
+    justify-content: center;
+    margin-left: 50%;
+  }
+  /* Parte Responsive de Cv */
+    .cv .contenido .info {
+      margin-top: 50px;
+      padding: 10px;
+    }
+    .cv .contenido .info h3 {
+      font-size: 1.5em;
+    }
+    .cv .contenido .info p {
+      font-size: 1em;
+    }
+    /*  Parte Responsive de formulario.html */
+    .contacto {
+      margin-top: 120px;
+    }
+    form {
+      width: 80%;
+    }
+} 
+}
